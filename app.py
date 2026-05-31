@@ -25,13 +25,12 @@ load_dotenv()
 # =========================================================
 @st.cache_resource
 def init_chromadb():
-    client = chromadb.PersistentClient(path="./chroma_db")
+    client = chromadb.PersistentClient(path="/tmp/.chroma")  # Important for Streamlit Cloud
     embedding_func = SentenceTransformerEmbeddingFunction(
         model_name="all-MiniLM-L6-v2"
     )
-    # IMPORTANT: collection name must match the one created by ingest.py
-    collection = client.get_collection(
-        name="company_docs",          # changed from "company_docs1"
+    collection = client.get_or_create_collection(   # Use get_or_create instead of get
+        name="company_docs",
         embedding_function=embedding_func
     )
     return collection
