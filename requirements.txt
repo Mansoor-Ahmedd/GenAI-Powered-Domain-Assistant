@@ -1,5 +1,6 @@
 streamlit
-chromadb
-langchain-openai
-python-dotenv
+chromadb==0.5.23
 sentence-transformers
+python-dotenv
+langchain-openai
+pysqlite3-binary
