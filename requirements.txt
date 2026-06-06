@@ -1,6 +1,6 @@
 streamlit
 chromadb==0.5.23
-sentence-transformers
-python-dotenv
 langchain-openai
+python-dotenv
+sentence-transformers==3.4.1
 pysqlite3-binary
