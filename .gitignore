@@ -1,35 +1,12 @@
 # Environment variables
 .env
 
-# Python cache
+# ChromaDB (large binaries + will be regenerated)
+chroma_db/
+
+# Bytecode
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# ChromaDB temporary files
-chroma_db/.chroma/
-chroma_db/*.lock
-
-# Streamlit
-.streamlit/secrets.toml
-
-# Virtual environment
-venv/
-env/
-.venv/
-
-# OS files
+# OS
 .DS_Store
-Thumbs.db
-
-# Jupyter Notebooks checkpoints
-.ipynb_checkpoints/
-
-# Logs
-*.log
-
-# Byte-compiled files
-__pycache__/
-*.py[cod]
-*$py.class
