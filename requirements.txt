@@ -1,6 +1,6 @@
-streamlit==1.38.0
-chromadb==0.5.23
-sentence-transformers==3.4.1
-langchain-openai==0.2.14
-python-dotenv==1.0.1
-pysqlite3-binary==0.5.4
+streamlit
+chromadb
+langchain-openai
+python-dotenv
+sentence-transfor
+subprocess  # not needed, but good to be explicit
